@@ -7,13 +7,13 @@ namespace MVC_Practical_13.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.4.4")]
-    public sealed partial class Initial_Db : IMigrationMetadata
+    public sealed partial class InitialDb : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(Initial_Db));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(InitialDb));
         
         string IMigrationMetadata.Id
         {
-            get { return "202306290635132_Initial_Db"; }
+            get { return "202306300549369_InitialDb"; }
         }
         
         string IMigrationMetadata.Source

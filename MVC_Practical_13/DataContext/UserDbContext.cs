@@ -9,7 +9,7 @@ namespace MVC_Practical_13.DataContext
 {
     public class UserDbContext : DbContext
     {
-        public UserDbContext() : base("name=CRUD")
+        public UserDbContext() : base("Data Source=SF-CPU-312\\SQLEXPRESS;Initial Catalog=CRUD;Integrated Security=True;Connect Timeout=30;Encrypt=False")
         {
             Database.SetInitializer(new DropCreateDatabaseIfModelChanges<UserDbContext>());
         }

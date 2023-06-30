@@ -9,14 +9,11 @@
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = true;
-            ContextKey = "MVC_Practical_13.DataContext.UserDbContext";
-
+            AutomaticMigrationsEnabled = false;
         }
 
         protected override void Seed(MVC_Practical_13.DataContext.UserDbContext context)
         {
-            //  seeding initial data for practice operations
             context.Users.AddOrUpdate(user => user.Id, new Models.User() { Name = "Jil", DOB = Convert.ToDateTime("17-04-2001").Date, Age = 21 }, new Models.User() { Name = "Janvi", DOB = Convert.ToDateTime("10-03-2001").Date, Age = 21 });
             context.SaveChanges();
         }
